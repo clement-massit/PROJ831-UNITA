@@ -1,0 +1,32 @@
+version: '3'
+
+services: 
+  node_backend:
+    container_name: node_unita
+    image: node_unita:0.0.1
+    build: 
+      context: ./node
+    ports:
+      - "3001:3001"
+    environment: 
+      - EXTERNAL_PORT=3001
+      - PGDATABASE=unitacarto
+      - PGUSER=application
+      - PGPASSWORD=jw8s0F4
+      - PGHOST=node_db
+      - PGPORT=5432
+    depends_on: 
+      - node_db
+  node_db: 
+    container_name: node_db
+    image: "postgres:12"
+    ports:
+      - "5432:5432"
+    environment: 
+      - POSTGRES_USER=application
+      - POSTGRES_PASSWORD=jw8s0F4
+      - POSTGRES_DB=unitacarto
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+volumes:
+  postgres-data: {}

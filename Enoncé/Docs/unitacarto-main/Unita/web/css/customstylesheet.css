@@ -1,0 +1,71 @@
+﻿body {
+    font-family: 'Arimo', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #333;
+    padding-top: 105px;
+    /*background-color: black;*/
+}
+@media only screen and (max-width: 991px) {
+    body {
+        padding-top: 75px;
+    }
+  }
+/*FOOTER GREEN*/
+#footer1 {
+    background: #006600;
+    color: #ffffff;
+    text-decoration: none !important;
+    text-align: center;
+    font-size: x-small;
+}
+.footerlinks{
+    color: #ffffff;
+}
+.footerlinks:hover {
+    color: #FFC000;
+}
+/*FOOTER BLUE*/
+#footer2 {
+    padding: 1em 0;
+    background: #0b1f2b; 
+    text-align: center;    
+}
+.footerunilogo{
+    height: 30px;
+    margin-right: 30px;
+}
+/*HEADER*/
+.section-header {  
+   background-color: #1a3e78;
+    /*padding: 2px;*/
+    color: #ffffff;
+    background-image: url(../img/lines.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    text-align: center;
+   color: #ffffff;    
+}
+
+/*MENU*/
+nav {  
+    position:fixed;
+}
+nav .navbar-nav li a.dropdown-toggle{
+    color: #0b1f2b !important;
+    font-family: 'Arimo', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+nav .navbar-nav li a:hover{ 
+    color: #4f8eda !important; 
+}
+@media only screen and (min-width: 990px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; 
+     }
+}
+
+.mail{
+    display: none;
+}

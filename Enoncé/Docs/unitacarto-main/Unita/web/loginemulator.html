@@ -1,0 +1,172 @@
+<section class="section-header" id="header-login">
+  <h3>Login Emulator</h3>
+</section>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <center>
+                <img width="80%" src="img/blogin.png"/>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <h4>Login by Role</h4>
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a class="btn btn-light" data-toggle="collapse" href="#collapse0" role="button"
+                            aria-expanded="false" aria-controls="collapse">Description</a>
+                        <a class="btn btn-light" data-toggle="collapse" href="#collapse1" role="button"
+                            aria-expanded="false" aria-controls="collapse">Real Login</a>
+                        <a class="btn btn-light" data-toggle="collapse" href="#collapse2" role="button"
+                            aria-expanded="false" aria-controls="collapse">Default Users' Role</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="collapse" id="collapse0">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <h4>Description</h4>
+                                    </div>
+                                </div>
+                                <!--LINE-->
+                                <div class="row">
+                                    <div class="col">
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">                                                                                
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        Roles will be defined by administrator.<br/>Here it's an example of the different roles.<br/> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapse1">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <h4>Real Login</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                      Login will be using Shibboleth.<br/>Once we have the Shibboleth user will look in our database for his specific role.<br/>If has no role will be a default user.<br/>
+                                      TECH: Roles will be able to be configured by super administrator<br/>
+                                      TECH: Menu will be able to be configured by super administrator<br/>
+                                      TECH: Login/Roles will be controlled in each screen
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapse2">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <h4>Default Users' Role</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                  SUPER_ADMIN:<br/>DN's user will be able to administrate UnitaCarto: create new universities, roles.<br/>
+                                  ADMIN:<br/>University administrator's user will be able to administrate all the UnitaCarto Data from his university.<br/>
+                                  STUDENT:<br/>University student's user will be able to see, navigate and build his own plan using "The Education Wikipedia"-UnitaCarto.<br/>
+                                  DEFAULT:<br/>Default user will be able to see, navigate by "The Education Wikipedia"-UnitaCarto.<br/>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <h4>Role Test</h4>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="rbLoginOption" value="role" checked>
+                                        <label class="form-check-label" for="byRole">
+                                            By Role
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="rbLoginOption" value="mail">
+                                        <label class="form-check-label" for="byMail">
+                                            By mail
+                                        </label>
+                                    </div>
+                        
+                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row">                                
+                                <div class="col"> 
+                                    <div class="role box">
+                                        <label for="cars">Choose a role:</label>
+                                        <div class="form-group">
+                                            <select class="form-control" name="database" id="ddlRoles">
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mail box">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="txtEmail" aria-describedby="emailHelp" laceholder="Enter email">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="btnLogin" onclick="btnLogin_onClick()">Enter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <hr>
+    </div>
+  </div>
+</div>
+<script>
+$.getScript("js/loginemulator.js");
+</script>

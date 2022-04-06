@@ -1,0 +1,16 @@
+{
+  "name": "node_unita",
+  "version": "1.0.0",
+  "description": "First version of API Rest node unita",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "pg": "^8.7.3"
+  }
+}
